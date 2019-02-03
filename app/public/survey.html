@@ -129,7 +129,7 @@
             </div>
         </footer>
     </div>
-    <div class="modal fade" id="modal" role="dialog">
+    <div class="modal fade" id="modal" role="dialog" style="color: black">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
@@ -175,7 +175,7 @@
                 var match = findMatch(data);
                 if (match.name !== undefined) {
                     $('.modal-title').text('You have a match!');
-                    $('.modal-body').html('<p class="strong">You\'re most compatible with:</p><p>' + match.name + '</p><img src="' + match.image + '" height="45">');
+                    $('.modal-body').html('<p class="strong">You\'re most compatible with:</p><p>' + match.name + '</p><img src="' + match.image + '" height="150px width=150px">');
                 } else {
                     $('.modal-title').text('Not enough friends');
                     $('.modal-body').text('Sorry, there are not enough friends to match you with.');
